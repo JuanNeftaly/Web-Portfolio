@@ -1,0 +1,93 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.cards {
+    width:  100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    justify-content: center;
+}
+
+.card {
+    flex: 1 0 300px;
+    max-width: 450px;
+
+    padding: 1rem;
+
+    background: oldlace;
+
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 25px;
+
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);;
+}
+
+div {
+    border-radius: 25px;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.btn-container {
+    align-self: stretch;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+}
+
+
+button {
+    flex: 1 0 100px;
+    padding: 1rem;
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+
+    background: none;
+    border: none;
+    border-radius: 25px 0px;
+
+    transition: all ease-in-out 250ms;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background: red;
+}
+
+button:nth-child(2) {
+    background: green;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

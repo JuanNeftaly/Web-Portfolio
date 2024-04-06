@@ -1,0 +1,40 @@
+footer {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+  
+    #footer-img {
+      margin-top: -8rem;
+    }
+  
+/*Arreglando el footer*/
+    #footer-links {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      text-align: center;
+      margin: 20px;
+  
+      a {
+        color: blanchedalmond;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      a:hover {
+        color: black;
+      }
+    }
+    #social-media {
+      text-align: center;
+      margin: 20px;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    footer {
+      flex-direction: column;
+    }
+  }
